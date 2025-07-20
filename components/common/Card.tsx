@@ -5,10 +5,10 @@ import STAR from '@/public/assets/icons/Star 2.png'
 
 
 const Card: React.FC<PropertyProps> = ({ name, address, price, offers, rating, category, image }) => {
-  const propertyFeatures = [{
-    img: '/assets/icons/bed 1.png',
+  // const propertyFeatures = [{
+  //   img: '/assets/icons/bed 1.png',
 
-  }]
+  // }]
   return (
     <div className='w-full  rounded-xl overflow-hidden'>
       <div className="relative h-48 w-full">
@@ -35,15 +35,15 @@ const Card: React.FC<PropertyProps> = ({ name, address, price, offers, rating, c
         <div className='flex flex-row justify-between '>
           <div className='w-[50%] flex justify-between gap-3 border border-gray-200 rounded-full py-1 px-5'>
             <div className='flex justify-between gap-1 '>
-              <img className='w-4 h-4' src="/assets/icons/bed 1.png" alt="icons" />
+              <Image width={16} height={16} src="/assets/icons/bed 1.png" alt="icons" />
               <span className='text-xs mr-1'>{offers.bed}</span>
             </div>
             <div className='flex justify-between gap-1'>
-              <img className='w-3.5 h-3.5' src="/assets/icons/bathtub 1.png" alt="icons" />
+              <Image width={14} height={14} src="/assets/icons/bathtub 1.png" alt="icons" />
               <span className='text-xs mr-1'>{offers.shower}</span>
             </div>
             <div className='flex justify-between gap-1'>
-              <img className='w-4 h-4' src="/assets/icons/people 1.png" alt="icons" />
+              <Image width={16} height={16} src="/assets/icons/people 1.png" alt="icons" />
               <span className='text-xs  mr-1'>{offers.occupants}</span>
             </div>
           </div>

@@ -2,7 +2,7 @@ import Image from "next/image";
 import HERO_IMAGE from "@/public/assets/Image 1.png";
 import { useState } from "react";
 import Pill from "@/components/common/Pill";
-import Button from "@/components/common/Button";
+// import Button from "@/components/common/Button";
 import FILTER from '@/public/assets/icons/Filter.png'
 import Card from '@/components/common/Card';
 import { PROPERTYLISTINGSAMPLE } from "@/constants";

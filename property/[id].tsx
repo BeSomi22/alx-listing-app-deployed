@@ -4,6 +4,14 @@ import PropertyDetail from '@/components/property/PropertyDetail';
 import BookingSection from "@/components/property/BookingSection";
 import ReviewSection from "@/components/property/ReviewSection";
 
+interface Review {
+    id: string;
+    name: string;
+    avatar: string;
+    rating: number;
+    comment: string;
+}
+
 export default function PropertyPage() {
     const router = useRouter();
     const { id } = router.query;
@@ -21,6 +29,7 @@ export default function PropertyPage() {
                 </div>
                 <div className="lg:w-2/3 w-full">
                     <ReviewSection reviews={property.reviews || []} />
+
                 </div>
             </div>
         </div>
